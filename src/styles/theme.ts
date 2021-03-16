@@ -26,16 +26,13 @@ export default {
     }
   },
   colors: {
-    primary: '',
-    secondary: '',
-    mainBg: '',
-    lightBg: '',
-    white: '',
-    black: '',
-    lightGray: '',
-    gray: '',
-    darkGray: '',
-    red: ''
+    blue: '#5429cc',
+    blueLight: '#6933ff',
+    mainBg: '#f0f2f5',
+    red: '#e52e4d',
+    white: '#fff',
+    textTitle: '#363f5f',
+    textBody: '#969cb3'
   },
   spacings: {
     xxsmall: '0.8rem',
