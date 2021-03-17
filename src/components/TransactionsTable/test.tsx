@@ -1,16 +1,15 @@
 import { render, screen } from '@testing-library/react';
 
-import Main from '.';
+import TransactionsTable from '.';
 
-describe('<Main />', () => {
+describe('<TransactionsTable />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<TransactionsTable />);
 
     expect(
-      screen.getByRole('heading', { name: /app name/i })
+      screen.getByRole('heading', { name: /TransactionsTable/i })
     ).toBeInTheDocument();
 
-    // Snapshot
     expect(container.firstChild).toMatchSnapshot();
   });
 });
