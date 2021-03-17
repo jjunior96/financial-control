@@ -1,16 +1,15 @@
 import { render, screen } from '@testing-library/react';
 
-import Main from '.';
+import Dashboard from '.';
 
-describe('<Main />', () => {
+describe('<Dashboard />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<Dashboard />);
 
     expect(
-      screen.getByRole('heading', { name: /app name/i })
+      screen.getByRole('heading', { name: /Dashboard/i })
     ).toBeInTheDocument();
 
-    // Snapshot
     expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -1,7 +1,7 @@
 export default {
   grid: {
     container: '130rem',
-    gutter: '3.2rem'
+    gap: '2.4rem'
   },
   border: {
     radius: '0.4rem'
@@ -30,6 +30,7 @@ export default {
     blueLight: '#6933ff',
     mainBg: '#f0f2f5',
     red: '#e52e4d',
+    green: '#33cc95',
     white: '#fff',
     textTitle: '#363f5f',
     textBody: '#969cb3'
