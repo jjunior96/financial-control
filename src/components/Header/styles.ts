@@ -18,7 +18,9 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin: 0 auto;
+  padding: 0 1.6rem 10rem;
 `;
 
 export const Logo = styled.div``;
