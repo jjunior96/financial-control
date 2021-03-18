@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import Header from 'components/Header';
 import Summary from 'components/Summary';
 import TransactionsTable from 'components/TransactionsTable';
+import NewTransactionModal from 'components/NewTransactionModal';
+
 import * as S from './styles';
 
 /**
@@ -35,12 +37,10 @@ const Dashboard: React.FC = () => {
         <Summary />
         <TransactionsTable />
 
-        <Modal
+        <NewTransactionModal
           isOpen={isNewTransactionModalOpen}
           onRequestClose={handleCloseNewTransactionModal}
-        >
-          <h2>Cadastrar Transação</h2>
-        </Modal>
+        />
       </S.Content>
     </S.Container>
   );
