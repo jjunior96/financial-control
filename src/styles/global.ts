@@ -53,11 +53,57 @@ const GlobalStyles = createGlobalStyle`
     button {
       font-family: ${theme.font.family};
     }
+
+    button {
+      cursor: pointer;
+    }
+
+    .react-modal-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .react-modal-content {
+      width: 100%;
+      max-width: 576px;
+      background-color: ${theme.colors.mainBg};
+      padding: 4rem;
+      position: relative;
+      border-radius: ${theme.border.radius};
+
+      display: flex;
+      flex-direction: column;
+
+      /* Botao para fechar o modal */
+      button[type='button'] {
+        position: absolute;
+        border: 0;
+        width: 2rem;
+        top: 1.6rem;
+        right: 1.6rem;
+        background: transparent;
+        color: ${theme.colors.textBody};
+
+        svg {
+          transition: color 0.2s;
+
+          &:hover {
+            color: ${theme.colors.textTitle};
+          }
+        }
+      }
+    }
   `}
 
-  button {
-    cursor: pointer;
-  }
+
 `;
 
 export default GlobalStyles;
