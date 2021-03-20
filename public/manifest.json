@@ -1,6 +1,6 @@
 {
-  "name": "App name",
-  "short_name": "APP",
+  "name": "Financial Control",
+  "short_name": "Financial Control",
   "icons": [
     {
       "src": "/img/bg.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#0c0f16",
-  "description": "App PWA",
+  "description": "Financial Control PWA",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#0c0f16"
